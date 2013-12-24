@@ -18,11 +18,13 @@
 
 * set memories in Profile1 (1600 MHz)
 
-
+![image](https://raw.github.com/Kikobeats/hackintosh/master/0.%20BIOS%20/2%20-%20mem%20profile.jpg)
 
 * set yout CPU overlock and disable EIST
 
 
+
+![image](https://raw.github.com/Kikobeats/hackintosh/master/0.%20BIOS%20/3%20-%20overclock.jpg)
 
 
 ### 1. Install latest version of Mavericks (Obvious)
@@ -33,18 +35,15 @@
 
 * [Multibeast 6.0.1](http://www.tonymacx86.com/downloads.php?do=file&id=206)
 * Custom settings for Z77-DS3H:
- 
-	* Audio: Without DSDT > ALC887/888b Current
-	* Network: Shailua's Atheros drivers
-	* 3rd Party Sata
-	* Trim patch for 10.9
-	* FakeSMC
-	* Hibernate Mode Desktop
-	* Chimera
+
+![image](https://raw.github.com/Kikobeats/hackintosh/master/2.%20Custom%20Kexts/settings.png)
+
 	
 I recommend you have 2 bootloaders: First, Chimera, and later install Clover (EFI). You run your computer normally with Clover and if you need repair anything you can use chimera for emergency.
 
 ### 3. Install EFI Bootloader
+
+Clover is better Bootloader than Chimera. more information [here](http://kikobeats.apps.runkite.com/clover-efi-bootloader/)
 
 *  Install [Clover](http://sourceforge.net/projects/cloverefiboot/) with this settings:
 
