@@ -13,8 +13,17 @@
 
 ### 0. Set BIOS settings
 * set hard disk in AHCI mode.
+
+![](https://raw.github.com/Kikobeats/hackintosh/master/0.%20BIOS%20/1%20-%20ahci%20mode.png)
+
 * set memories in Profile1 (1600 MHz)
+
+
+
 * set yout CPU overlock and disable EIST
+
+
+
 
 ### 1. Install latest version of Mavericks (Obvious)
 
