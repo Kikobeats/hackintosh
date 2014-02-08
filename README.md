@@ -6,7 +6,7 @@
 * Z77-DS3H
 * i5-3570K @ 4.3GHz
 * 2x8 DDR3 Corsair Vengeance
-* ATI HD 7870
+* MSI GTX570 OC Edition
 
 
 ## Step by Step
