@@ -1,12 +1,12 @@
-# Hackintosh Build 
-**Current version: (v.10.9.1)**
+# Hackintosh Build
+**Current version: (v.10.9.2)**
 
 ### Hardware:
 
 * Z77-DS3H
-* i5-3570K @ 4.3GHz
+* i5-3570K @ 4.2GHz
 * 2x8 DDR3 Corsair Vengeance
-* MSI GTX570 OC Edition
+* VTX3D HD 7870 X-Edition
 
 
 ## Step by Step
@@ -38,7 +38,7 @@
 
 ![image](https://raw.github.com/Kikobeats/hackintosh/master/2.%20Custom%20Kexts/settings.png)
 
-	
+
 I recommend you have 2 bootloaders: First, Chimera, and later install Clover (EFI). You run your computer normally with Clover and if you need repair anything you can use chimera for emergency.
 
 ### 3. Install EFI Bootloader
@@ -50,15 +50,15 @@ Clover is better Bootloader than Chimera. more information [here](http://kikobea
 	* UEFI Install
 	* Install to ESP
 	* Choose all themes
-	* Choose UEFI 64 bit drivers: DataHubDxe-64, EMUVariableUEFI-64 and OSXAptioFixDrv-64  
+	* Choose UEFI 64 bit drivers: DataHubDxe-64, EMUVariableUEFI-64 and OSXAptioFixDrv-64
 	* Install RC Scripts
 	* Install Optional RC Scripts
 	* Install Clover Preference Pane
-	
-Once you install make sure you create a config.plist by going to terminal and entering this code: 
+
+Once you install make sure you create a config.plist by going to terminal and entering this code:
 
 	/usr/local/bin/clover-genconfig >config.plist
-	
+
 You will then have to tweak it a little based on your system and preferences - see various Clover resources for "How To"
 
 * Install your Ivybridge SSDT and if you like a custom DSDT in EFI/Clover/ACPI/Patched
