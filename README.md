@@ -1,5 +1,7 @@
 # Hackintosh Build
-**Current version: (v.10.9.2)**
+
+
+![](http://i.imgur.com/MjStP0b.png)
 
 ### Hardware:
 
@@ -12,6 +14,7 @@
 ## Step by Step
 
 ### 0. Set BIOS settings
+
 * set hard disk in AHCI mode.
 
 ![](https://raw.github.com/Kikobeats/hackintosh/master/0.%20BIOS%20/1%20-%20ahci%20mode.png)
@@ -77,8 +80,3 @@ You will then have to tweak it a little based on your system and preferences - s
 
 * [Kext Wizard](http://dl.dropboxusercontent.com/u/7085278/Kext_Wizard/download.html)
 * [Kext Utility](http://cvad-mac.narod.ru/index/0-4)
-
-
-
-
-
