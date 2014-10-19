@@ -1,5 +1,4 @@
-# Hackintosh Build
-
+# Hackintosh Build | [Profile in Geekbench](http://browser.primatelabs.com/user/Kikobeats)
 
 ![](http://i.imgur.com/MjStP0b.png)
 
@@ -9,6 +8,7 @@
 * i5-3570K @ 4.2GHz
 * 2x8 DDR3 Corsair Vengeance
 * VTX3D HD 7870 X-Edition
+
 
 
 ## Step by Step
