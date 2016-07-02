@@ -1,82 +1,68 @@
 # Hackintosh Build | [Profile in Geekbench](http://browser.primatelabs.com/user/Kikobeats)
 
-![](http://i.imgur.com/MjStP0b.png)
+![](preview.png)
 
-### Hardware:
+> * Gitabyte Z77-DS3H Rev1.1.
+* Intel i5 3570K @ 4.2GHz.
+* 2x8 DDR3 Corsair Vengeance 1600MHz.
+* MSI Matrix 7970 @ R9 280x.
 
-* Z77-DS3H
-* i5-3570K @ 4.2GHz
-* 2x8 DDR3 Corsair Vengeance
-* VTX3D HD 7870 X-Edition
+## BIOS
 
-
-
-## Step by Step
-
-### 0. Set BIOS settings
-
-* set hard disk in AHCI mode.
+- Load optimized values.
+- Set hard disk in AHCI mode
 
 ![](https://raw.github.com/Kikobeats/hackintosh/master/0.%20BIOS%20/1%20-%20ahci%20mode.png)
 
-* set memories in Profile1 (1600 MHz)
+- Set memories in Profile1 (1600 MHz)
 
 ![image](https://raw.github.com/Kikobeats/hackintosh/master/0.%20BIOS%20/2%20-%20mem%20profile.jpg)
 
-* set yout CPU overlock and disable EIST
-
-
+- Set your CPU overlock and disable EIST
 
 ![image](https://raw.github.com/Kikobeats/hackintosh/master/0.%20BIOS%20/3%20-%20overclock.jpg)
 
+## Clover
 
-### 1. Install latest version of Mavericks (Obvious)
+- Mount EFI Partition using Clover Configuration.
+- Copy config.plist.zip or generate one:
 
-* [myHack](http://myhack.sojugarden.com/guide/) for create USB installer and remove useless kexts
+```bash
+/usr/local/bin/clover-genconfig > ~/Desktop/config.plist
+```
 
-### 2. Install custom kexts
+- Modify based on the screens to adjust some values.
+- Save at Clover path and reboot.
 
-* [Multibeast 6.0.1](http://www.tonymacx86.com/downloads.php?do=file&id=206)
-* Custom settings for Z77-DS3H:
+## Kexts
 
-![image](https://raw.github.com/Kikobeats/hackintosh/master/2.%20Custom%20Kexts/settings.png)
+### Trim Enabler
 
+See [Trim Enabler](https://www.macupdate.com/app/mac/37852/trim-enabler).
 
-I recommend you have 2 bootloaders: First, Chimera, and later install Clover (EFI). You run your computer normally with Clover and if you need repair anything you can use chimera for emergency.
+### Clover Audio Injection ALC887.
 
-### 3. Install EFI Bootloader
+See [Clover ALC](https://github.com/toleda/audio_CloverALC) and [script command report](https://gist.github.com/Kikobeats/aca8a37cc9b0a1a625b7298df2187b8f).
 
-Clover is better Bootloader than Chimera. more information [here](http://kikobeats.apps.runkite.com/clover-efi-bootloader/)
+### Atheros Driver
 
-*  Install [Clover](http://sourceforge.net/projects/cloverefiboot/) with this settings:
+See [ALXEthernet](http://www.tonymacx86.com/resources/alxethernet.267/).
 
-	* UEFI Install
-	* Install to ESP
-	* Choose all themes
-	* Choose UEFI 64 bit drivers: DataHubDxe-64, EMUVariableUEFI-64 and OSXAptioFixDrv-64
-	* Install RC Scripts
-	* Install Optional RC Scripts
-	* Install Clover Preference Pane
+### USB3 Support
 
-Once you install make sure you create a config.plist by going to terminal and entering this code:
+See [USBInjectAll](https://github.com/RehabMan/OS-X-USB-Inject-All) and [download page](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads).
 
-	/usr/local/bin/clover-genconfig >config.plist
+### Hardware Stats
 
-You will then have to tweak it a little based on your system and preferences - see various Clover resources for "How To"
+See FakeSMC at [Multibeast](http://www.tonymacx86.com/resources/multibeast-el-capitan-8-2-3.319/).
 
-* Install your Ivybridge SSDT and if you like a custom DSDT in EFI/Clover/ACPI/Patched
+## Benchmarks
 
-* Mount EFI partition:
+- [LuxMarks](http://www.luxrender.net/wiki/LuxMark#Download).
+- [Geekbench](http://browser.primatelabs.com/user/54544).
 
-		diskutil list
-		mkdir /Volumes/efi
-		sudo mount -t msdos /dev/diskXsX /Volumes/efi
-
-
-* more information [here](http://www.tonymacx86.com/mavericks-desktop-guides/114133-mavericks-install-ga-z77-ds3h-w-gt640.html).
-
-
-### 4. Install utilities
+## Utils
 
 * [Kext Wizard](http://dl.dropboxusercontent.com/u/7085278/Kext_Wizard/download.html)
 * [Kext Utility](http://cvad-mac.narod.ru/index/0-4)
+* [Clover Configurator]().
