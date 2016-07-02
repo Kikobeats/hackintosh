@@ -63,6 +63,5 @@ See FakeSMC at [Multibeast](http://www.tonymacx86.com/resources/multibeast-el-ca
 
 ## Utils
 
-* [Kext Wizard](http://dl.dropboxusercontent.com/u/7085278/Kext_Wizard/download.html)
 * [Kext Utility](http://cvad-mac.narod.ru/index/0-4)
-* [Clover Configurator]().
+* [Clover Configurator](http://mackie100projects.altervista.org/).
