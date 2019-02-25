@@ -2,7 +2,7 @@
 
 ![](preview.png)
 
-> * Gitabyte Z77-DS3H Rev1.1.
+* Gigabyte Z77-DS3H Rev1.1.
 * Intel i5 3570K @ 4.2GHz.
 * 2x8 DDR3 Corsair Vengeance 1600MHz.
 * MSI Matrix 7970 @ R9 280x.
